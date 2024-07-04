@@ -1,0 +1,354 @@
+/* geral */
+main {
+    background-color: #3E444B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#info, #principal, #habilidades_poderes, #pericias, #atributos, #dados, #inventario, #proficiencias, #armas, #sobre, #rituais {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    height: 36vw;
+    margin: 0.4%;
+    background-color: #384753;
+}
+
+.Titulo {
+    background-color: #2C3035;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.Titulo h1, .Titulo a {
+    padding: 5px;
+}
+
+.div-info {
+    width: 9.6vw;
+    margin: 16px;
+}
+
+/* Estilo geral para os contêineres de informação */
+.Conteudo-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.box-titulo {
+    border: 2px solid white; /* Border of the box */
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    background-color: #384753; /* Background color inside the box */
+    width: 100%;
+}
+
+/* Estilo para o título de cada informação */
+.box-titulo h1 {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 1vw;
+    color: white;
+    background-color: #384753; /* Background color behind the label */
+}
+
+/* Estilo para o texto de cada informação */
+.box-titulo p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2vw;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+#status {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#Vida, #Sanidade, #PE{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    padding-top: 6px;
+}
+
+#Vida p, #Sanidade p, #PE p{
+    font-size: 1.1vw;
+}
+
+
+#Vida div, #Sanidade div, #PE div {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-direction: row;
+}
+
+.box-dados-bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.botão-perfil {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2vw;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.barra p {
+    margin: 0 10px;
+    font-size: 1.4vw;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Fundo-barra {
+    width: 22vw;
+    height: 1.6vw;
+    background-color: #34495e;
+    position: relative;
+    margin-left: 10px;
+}
+
+.barra {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#barra-Vida {
+    background-color: rgb(182, 18, 18);
+}
+#barra-Sanidade {
+    background-color: rgb(31, 31, 177);
+}
+#barra-PE {
+    background-color: rgb(207, 195, 27);
+}
+
+#valor-Vida, #valor-Sanidade, #valor-PE{
+    margin: 0;
+    font-size: 1vw;
+    color: white;
+    z-index: 1;
+}
+
+.barra p {
+    margin: 0;
+    padding: 0 5px;
+    font-size:  1.2vw;
+    color: white;
+    z-index: 2;
+}
+
+
+
+
+#box-img {
+    position: relative;
+    width: 7vw; /* Tamanho específico */
+    height: 8vw; /* Tamanho específico */
+    border-radius: 20px; /* Forma arredondada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+
+#box-defesas2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4px;
+    font-size: 0.8vw;
+    color: aliceblue;
+
+}
+
+#box-defesas2 div {
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #2b4a69;
+}
+
+.Defesas-Passiva, .Defesas-Esquiva, .Defesas-Bloqueio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 0.9vw;
+    width: 4.2vw;
+}
+
+.Resistencias-Corte, .Resistencias-Balistica, .Resistencias-Quimica, .Resistencias-Fogo, .Resistencias-Frio, .Resistencias-Impacto, .Resistencias-Eletricidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+#Resistencias, #box-defesas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #374250; 
+    padding: 2px 0px 4px 0px;
+    margin: 6px 10px 4px 10px;
+    border-radius: 8px;
+}
+
+#Resistencias-titulo, #box-defesas-titulo {
+    font-size: 1vw;
+    text-decoration: underline;
+}
+
+
+#box-resistencias{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    flex-wrap: wrap;
+}
+
+#Resistencias div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 0.86vw;
+    width: 4.2vw;
+    margin: 2px;
+    background-color: #2b4a69;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#Resistencias div p {
+    font-size: 0.8vw;
+    padding: 1px;
+}
+
+
+.Resistencias-Mental {
+    color: hwb(158 51% 14%);
+    font-weight: bold;
+}
+
+.Resistencias-Morte {
+    color: hwb(29 2% 85%);
+    font-weight: bold;
+}
+
+.Resistencias-Conhecimento {
+    color: hwb(64 40% 0%);
+    font-weight: bold;
+}
+
+.Resistencias-Sangue {
+    color: hwb(0 29% 0%);
+    font-weight: bold;
+}
+
+.Resistencias-Energia {
+    color: hwb(300 38% 2%);
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+    .container-info {
+        flex-direction: column; /* Empilha os itens verticalmente em telas pequenas */
+    }
+    .container-info .box-titulo h1 {
+        font-size: 12px;
+    }
+    .container-info .box-titulo p {
+        font-size: 16px;
+    }
+}
