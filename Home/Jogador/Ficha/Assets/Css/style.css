@@ -7,6 +7,16 @@ main {
     flex-wrap: wrap;
 }
 
+input[type="submit"] {
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    color: inherit; /* Usa a cor de texto do elemento pai */
+    font: inherit; /* Usa a fonte do elemento pai */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 0; /* Remove o padding */
+    margin: 0; /* Remove a margem */
+}
+
 #info, #principal, #habilidades_poderes, #pericias, #atributos, #dados, #inventario, #proficiencias, #armas, #sobre, #rituais {
     display: flex;
     flex-direction: column;
@@ -14,6 +24,7 @@ main {
     height: 36vw;
     margin: 0.4%;
     background-color: #384753;
+
 }
 
 .Titulo {
@@ -22,6 +33,24 @@ main {
     justify-content: center;
     align-items: center;
     padding: 10px;
+}
+
+.thp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.thp input {
+    padding: 5px;
+    margin: 3px;
+    border: #1956a0 2px solid;
+    border-radius: 5px;
+}
+
+.HP-press {
+    background-color: #103563;
 }
 
 .Titulo h1, .Titulo a {
@@ -206,7 +235,7 @@ main {
     flex-wrap: wrap;
     margin: 4px;
     font-size: 0.8vw;
-    color: aliceblue;
+    color: #f0f8ff;
 
 }
 
@@ -314,6 +343,85 @@ main {
 
 
 
+
+
+
+#listaHP {
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 4px;
+}
+
+#listaHP h1 {
+    font-size: 1.2vw;
+    color: white;
+    margin: 10px;
+}
+
+#listaHP p {
+    font-size: 1vw;
+    color: white;
+    margin: 10px;
+}
+
+
+#listaHP li {
+    padding: 0.2vw;
+    margin: 0.5vw 1vw 0vw 1vw;
+    background-color: #374250;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+#lista-pericias {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#lista-pericias ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-pericias img {
+    width: 3.6vw;
+    height: auto; /* Mantém a proporção do SVG */
+    fill: red;
+}
+
+#lista-pericias div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#lista-pericias li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #374250;
+    padding: 4px;
+    height: 5.2vw;
+    width: 6.8vw;
+    border-radius: 1vw;
+    margin: 6px;
+}
+
+#lista-pericias p {
+    font-size: 1.2vw;
+    color: aliceblue;
+    margin: 2px;
+}
 
 
 
