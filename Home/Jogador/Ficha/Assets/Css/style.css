@@ -8,16 +8,51 @@ main {
 }
 
 input[type="submit"] {
-    background: none; /* Remove o fundo */
-    border: none; /* Remove a borda */
-    color: inherit; /* Usa a cor de texto do elemento pai */
-    font: inherit; /* Usa a fonte do elemento pai */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    padding: 0; /* Remove o padding */
-    margin: 0; /* Remove a margem */
+    background: none;
+    border: none; 
+    color: inherit;
+    font: inherit; 
+    cursor: pointer;
+    padding: 0; 
+    margin: 0; 
 }
 
-#info, #principal, #habilidades_poderes, #pericias, #atributos, #dados, #inventario, #proficiencias, #armas, #sobre, #rituais {
+button {
+    background: none;
+    border: none; 
+    color: inherit;
+    font: inherit; 
+    cursor: pointer;
+    padding: 0; 
+    margin: 0; 
+}
+
+#listaHP::-webkit-scrollbar, #lista-pericias::-webkit-scrollbar {
+    width: 0.8vw;
+    
+}
+
+#listaHP::-webkit-scrollbar-track, #lista-pericias::-webkit-scrollbar-track {
+    background: #103563;
+    border: 2px #2C3035 solid ;
+    background-origin: border-box;
+    border-radius: 0.4vw;
+    margin: 2px;
+    
+}
+
+#listaHP::-webkit-scrollbar-thumb, #lista-pericias::-webkit-scrollbar-thumb {
+    background: #1956a0;
+    border-radius: 0.4vw;
+    border: 2px solid #2C3035;
+}
+
+/* Personaliza o estado hover do thumb */
+#listaHP::-webkit-scrollbar-thumb:hover, #lista-pericias::-webkit-scrollbar-thumb:hover {
+    background: #2962a7;
+}
+
+#info, #principal, #habilidades_poderes, #pericias, #atributos, #dados, #inventario, #proficiencias, #armas {
     display: flex;
     flex-direction: column;
     width: 32.5%;
@@ -25,6 +60,23 @@ input[type="submit"] {
     margin: 0.4%;
     background-color: #384753;
 
+}
+
+#lista-pericias {
+    direction: rtl; /* Muda a direção para rtl, movendo a scrollbar para a esquerda */
+}
+
+#lista-pericias > * {
+    direction: ltr; /* Mantém o conteúdo dos filhos em ltr */
+}
+
+#sobre, #rituais {
+    display: flex;
+    flex-direction: column;
+    width: 99.9%;
+    height: 36vw;
+    margin: 0.4%;
+    background-color: #384753;
 }
 
 .Titulo {
@@ -189,13 +241,13 @@ input[type="submit"] {
     justify-content: center;
 }
 #barra-Vida {
-    background-color: rgb(182, 18, 18);
+    background-color: rgb(194, 54, 54);
 }
 #barra-Sanidade {
-    background-color: rgb(31, 31, 177);
+    background-color: rgb(44, 67, 173);
 }
 #barra-PE {
-    background-color: rgb(207, 195, 27);
+    background-color: rgb(197, 188, 59);
 }
 
 #valor-Vida, #valor-Sanidade, #valor-PE{
@@ -278,7 +330,6 @@ input[type="submit"] {
 
 #Resistencias-titulo, #box-defesas-titulo {
     font-size: 1vw;
-    text-decoration: underline;
 }
 
 
@@ -312,17 +363,17 @@ input[type="submit"] {
 
 
 .Resistencias-Mental {
-    color: hwb(158 51% 14%);
+    color: hwb(158 37% 36%);
     font-weight: bold;
 }
 
 .Resistencias-Morte {
-    color: hwb(29 2% 85%);
+    color: hwb(30 15% 81%);
     font-weight: bold;
 }
 
 .Resistencias-Conhecimento {
-    color: hwb(64 40% 0%);
+    color: hwb(64 33% 29%);
     font-weight: bold;
 }
 
@@ -332,7 +383,7 @@ input[type="submit"] {
 }
 
 .Resistencias-Energia {
-    color: hwb(300 38% 2%);
+    color: hwb(300 40% 25%);
     font-weight: bold;
 }
 
@@ -423,6 +474,104 @@ input[type="submit"] {
     margin: 2px;
 }
 
+.Pericia-item svg {
+    fill: aliceblue;
+}
+
+.Pericia-item.Treinado svg, .Pericia-item.Veterano svg, .Pericia-item.Expert svg {
+    fill: currentColor;
+}
+
+.Treinado {
+    color: #3baa65;
+    fill: #3baa65;
+}
+
+.Veterano {
+    color: #3571aa;
+    fill: #3571aa;
+}   
+
+.Expert {
+    color: #c27d3d;
+    fill: #c27d3d;
+}
+
+
+
+
+#Atributo {
+    position: relative;
+}
+
+#img-atributos {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.attribute {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#For { top: 40%; left: 19.7%; font-size: 3vw;}
+#Agi { top: 18%; left: 50%; font-size: 3vw;}
+#Int { top: 40%; right: 13.5%; font-size: 3vw;}
+#Vig { bottom: 12%; left: 70.5%; font-size: 3vw;}
+#Pre { bottom: 12%; left: 29%; font-size: 3vw;}
+
+
+
+
+
+
+#Custom-Dados ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#Custom-Dados button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #374250;
+    padding: 0.2vw;
+    height: 4.2vw;
+    width: 6.2vw;
+    border-radius: 0.7vw;
+    margin: 6px;
+}
+
+#Custom-Dados svg {
+    fill: aliceblue;
+    margin: 3px;
+}
+
+.CD-valor {
+    font-size: 1.1vw;
+    position: relative;
+    left: -2.26vw;
+    top: 0.25vw;
+}
+
+.CD-valor-dois-caracteres {
+    font-size: 0.9vw;
+    position: relative;
+    left: -2.4vw;
+    top: 0.25vw;
+}
+
+.CD-valor-tres-caracteres {
+    font-size: 0.7vw;
+    position: relative;
+    left: -2.54vw;
+    top: 0.34vw;
+}
 
 
 
@@ -437,6 +586,12 @@ input[type="submit"] {
 
 
 
+
+
+
+.oculto.info-oculta {
+    display: none;
+}
 
 
 
