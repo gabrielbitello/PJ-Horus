@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (divOculta.style.display === 'none' || divOculta.style.display === '') {
                 divOculta.style.display = 'block';
                 botao.style.transform = 'rotate(180deg)';
-                container.style.height = '10.5vw';
+                container.style.height = '13.6vw';
             } else {
                 divOculta.style.display = 'none';
                 botao.style.transform = 'rotate(0deg)';
-                container.style.height = '6vw';
+                container.style.height = '6.4vw';
             }
         });
     });

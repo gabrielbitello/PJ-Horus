@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Orus-Ficha</title>
+        <title>Horus-Ficha</title>
         <link rel="stylesheet" href="../../../Global/Css/reset.css">
         <link rel="stylesheet" href="Assets/Css/style.css">
         <link rel="svg" href="vol-high-svgrepo-com.svg">
@@ -233,7 +233,7 @@
                             <input type="submit" name="Poderes" value="Poderes">
                         </form>
                     </div>
-                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/circle-add.svg#circle-add"></use></svg></a>
                 </div>
                 <div id="listaHP">
                     <ul>
@@ -595,16 +595,18 @@
                 <div class="Titulo">
                     <p></p>
                     <h1>Inventário</h1>
-                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/circle-add.svg#circle-add"></use></svg></a>
                 </div>
                 <div id="inv">
-                    <div>
-                        <p>Carga:</p>
-                        <p>00/00</p>
-                    </div>
-                    <div>
-                        <p>Categoria:</p>
-                        <p>00/00</p>
+                    <div class="div-info-inv box-info-geral-inv">
+                        <div class="div-info-inv box-box-info-geral-inv">
+                            <p>Carga:</p>
+                            <span>00/00</span>
+                        </div>
+                        <div class="div-info-inv box-box-info-geral-inv">
+                            <p>Categoria:</p>
+                            <span>00/00</span>
+                        </div>
                     </div>
                         <ul id="ul-inv">
                             <li class="item-lista-inventario">
@@ -628,13 +630,33 @@
                                     </div>
                                 </div>
                                 <form method="post">
-                                    <button type="submit" name="IEQ" value="0 DTG45DGS3" class="item-Equipado"></button>
+                                    <button type="submit" name="IEQ" value="0 DTG45DGS3" class="item-Equipado"><svg><use xlink:href="../../../Global/Svg/tick.svg#tick"></use></svg></button>
                                     <div class="inv-linha"></div>
                                     <div class="oculto info-oculta">
-                                        <p class="Tag-item">lixo</p>
-                                        <p class="Descricao-item">Esse é um item lixo</p>
-                                        <button type="submit" name="IRE" value="Remover DTG45DGS3">Remover</button>
-                                        <button type="submit" name="IED" value="Editar DTG45DGS3">Editar</button>
+                                        <p class="Tag-item">inconstitucional</p>
+                                        <p class="Descricao-item">Navegando pelos céus distópicos de Xylon, a nave Incessant Voyager cortava a névoa ácida. Seus motores pulsavam em sincronia com o coração mecânico da cidade. Abaixo, entre ruínas e torres corroídas, os sussurros dos rebeldes ecoavam, desafiando o silêncio opressivo da hegemonia tecnocrática.</p>
+                                        <button type="submit" name="IRE" value="Remover DTG45DGS3" class="inv-remover"><svg><use xlink:href="../../../Global/Svg/trash.svg#trash"></use></svg></button>
+                                        <button type="submit" name="IED" value="Editar DTG45DGS3" class="inv-editar"><svg><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></button>
+                                        <p class="elemento-inv">Conhecimento</p>
+                                        <div class="div-info-inv inv-Tipo">
+                                            <p>Tipo:</p>
+                                            <span>Balístico</span>
+                                        </div>
+                                        <div class="div-info-inv inv-defesa">
+                                            <p>Defesa:</p>
+                                            <span>999</span>
+                                        </div>
+                                        <div class="div-info-inv inv-alcance">
+                                            <p>Alcance:</p>
+                                            <span>Médio</span>
+                                        </div>
+                                        <div class="div-info-inv detalhes-arma-inv">
+                                            <p>Arma simples</p>
+                                            <p>-</p>
+                                            <p>Corpo a corpo</p>
+                                            <p>-</p>
+                                            <p>Leve</p>
+                                        </div>
                                     </div>
                                 </form>
                             </li>
@@ -659,13 +681,33 @@
                                     </div>
                                 </div>
                                 <form method="post">
-                                    <button type="submit" name="IEQ" value="0 DTG45DGS3" class="item-Equipado"></button>
+                                    <button type="submit" name="IEQ" value="0 DTG45DGS3" class="item-Equipado"><svg class="hidden"><use xlink:href="../../../Global/Svg/tick.svg#tick"></use></svg></button>
                                     <div class="inv-linha"></div>
                                     <div class="oculto info-oculta">
-                                        <p class="Tag-item">lixo</p>
-                                        <p class="Descricao-item">Esse é um item lixo</p>
-                                        <button type="submit" name="IRE" value="Remover DTG45DGS3">Remover</button>
-                                        <button type="submit" name="IED" value="Editar DTG45DGS3">Editar</button>
+                                        <p class="Tag-item">inconstitucional</p>
+                                        <p class="Descricao-item">Navegando pelos céus distópicos de Xylon, a nave Incessant Voyager cortava a névoa ácida. Seus motores pulsavam em sincronia com o coração mecânico da cidade. Abaixo, entre ruínas e torres corroídas, os sussurros dos rebeldes ecoavam, desafiando o silêncio opressivo da hegemonia tecnocrática.</p>
+                                        <button type="submit" name="IRE" value="Remover DTG45DGS3" class="inv-remover"><svg><use xlink:href="../../../Global/Svg/trash.svg#trash"></use></svg></button>
+                                        <button type="submit" name="IED" value="Editar DTG45DGS3" class="inv-editar"><svg><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></button>
+                                        <p class="elemento-inv">Conhecimento</p>
+                                        <div class="div-info-inv inv-Tipo">
+                                            <p>Tipo:</p>
+                                            <span>Balístico</span>
+                                        </div>
+                                        <div class="div-info-inv inv-defesa">
+                                            <p>Defesa:</p>
+                                            <span>999</span>
+                                        </div>
+                                        <div class="div-info-inv inv-alcance">
+                                            <p>Alcance:</p>
+                                            <span>Médio</span>
+                                        </div>
+                                        <div class="div-info-inv detalhes-arma-inv">
+                                            <p>Arma simples</p>
+                                            <p>-</p>
+                                            <p>Corpo a corpo</p>
+                                            <p>-</p>
+                                            <p>Leve</p>
+                                        </div>
                                     </div>
                                 </form>
                             </li>
@@ -679,13 +721,31 @@
                     <h1>Proficiências</h1>
                     <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
+                <div>
+                    <div>
+                        <p>Armas simples</p>
+                        <div><svg><use xlink:href="../../../Global/Svg/tick.svg#tick"></use></svg></div>
+                    </div>
+                    <div>
+                        <p>Armas táticas</p>
+                        <div><svg><use xlink:href="../../../Global/Svg/tick.svg#tick"></use></svg></div>
+                    </div>
+                    <div>
+                        <p>Armas pesadas</p>
+                        <div><svg><use xlink:href="../../../Global/Svg/tick.svg#tick"></use></svg></div>
+                    </div>
+                    <div>
+                        <p>Armas simples</p>
+                        <div><svg><use xlink:href="../../../Global/Svg/tick.svg#tick"></use></svg></div>
+                    </div>
+                </div>
             </section>
 
             <section id="armas">
                 <div class="Titulo">
                     <p></p>
                     <h1>Armas</h1>
-                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/circle-add.svg#circle-add"></use></svg></a>
                 </div>
             </section>
 
@@ -693,7 +753,7 @@
                 <div class="Titulo">
                     <p></p>
                     <h1>Rituais</h1>
-                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/circle-add.svg#circle-add"></use></svg></a>
                 </div>
             </section>
 
