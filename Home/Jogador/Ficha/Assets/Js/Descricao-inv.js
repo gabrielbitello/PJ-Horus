@@ -5,11 +5,18 @@ document.addEventListener('DOMContentLoaded', function() {
         botao.addEventListener('click', function() {
             var container = botao.closest('.item-lista-inventario');
             var divOculta = container.querySelector('.oculto');
+
             if (divOculta.style.display === 'none' || divOculta.style.display === '') {
                 divOculta.style.display = 'block';
+                botao.style.transform = 'rotate(180deg)';
+                container.style.height = '10.5vw';
             } else {
                 divOculta.style.display = 'none';
+                botao.style.transform = 'rotate(0deg)';
+                container.style.height = '6vw';
             }
         });
     });
 });
+
+

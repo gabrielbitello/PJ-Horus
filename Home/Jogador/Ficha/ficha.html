@@ -6,30 +6,7 @@
         <title>Orus-Ficha</title>
         <link rel="stylesheet" href="../../../Global/Css/reset.css">
         <link rel="stylesheet" href="Assets/Css/style.css">
-        <svg style="display: none;">
-            <symbol id="D20" viewBox="0 0 64.000000 64.000000">
-                <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)">
-                    <path d="M195 559 c-60 -34 -118 -68 -127 -77 -16 -13 -18 -35 -18 -167 0
-                    -132 2 -154 18 -167 29 -27 238 -138 258 -138 20 0 215 108 246 137 16 14 18
-                    35 18 168 0 133 -2 154 -18 168 -33 30 -226 137 -247 137 -11 0 -69 -28 -130
-                    -61z m121 19 c-3 -13 -6 -47 -6 -76 l0 -53 -47 5 c-27 3 -79 8 -117 12 l-68 6
-                    113 63 c63 35 118 64 123 65 4 0 6 -10 2 -22z m140 -44 c63 -37 114 -67 112
-                    -69 -2 -1 -56 -5 -120 -8 l-118 -5 0 74 c0 41 2 74 5 74 3 0 58 -30 121 -66z
-                    m-213 -94 c67 0 70 12 -27 -127 l-64 -92 -31 100 c-18 55 -35 108 -38 116 -6
-                    14 1 15 48 10 30 -4 80 -7 112 -7z m314 -2 c-2 -7 -19 -58 -38 -113 -37 -109
-                    -40 -115 -46 -99 -2 5 -30 52 -63 103 -33 51 -60 96 -60 100 0 4 42 8 92 10
-                    51 1 95 4 97 7 10 9 23 3 18 -8z m-458 -109 c16 -52 32 -101 36 -110 4 -12 -3
-                    -20 -25 -29 -17 -7 -32 -11 -34 -9 -4 4 -13 249 -9 245 2 -1 16 -45 32 -97z
-                    m284 8 c32 -51 65 -102 74 -114 l15 -23 -156 0 -156 0 77 115 c43 63 80 114
-                    83 114 3 0 31 -41 63 -92z m189 -39 c-2 -68 -5 -124 -6 -125 -6 -7 -66 23 -66
-                    32 0 6 14 51 30 101 37 109 39 114 42 114 2 0 1 -55 0 -122z m-347 -189 l70
-                    -72 -60 34 c-33 18 -82 46 -110 61 -49 26 -49 27 -25 37 44 17 54 12 125 -60z
-                    m180 9 c-32 -35 -63 -69 -70 -75 -8 -10 -28 4 -85 62 l-74 75 143 0 144 0 -58
-                    -62z m132 46 c23 -6 19 -10 -44 -46 -37 -22 -84 -49 -103 -61 -31 -19 -27 -13
-                    29 51 41 47 69 71 78 67 8 -3 26 -8 40 -11z"/>
-                </g>
-            </symbol>
-        </svg>
+        <link rel="svg" href="vol-high-svgrepo-com.svg">
     </head>
     <body>
         <header>
@@ -40,8 +17,9 @@
         <main>
             <section id="info">
                 <div class="Titulo">
+                    <p></p>
                     <h1>informações</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
                 <div class="Conteudo-info">
                     <div id="nome" class="div-info">
@@ -109,8 +87,9 @@
 
             <section id="principal">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Principal</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
                 <div id="status">
                     <div id="box-img">
@@ -247,13 +226,14 @@
 
             <section id="habilidades_poderes">
                 <div class="Titulo">
+                    <p></p>
                     <div class="thp">
                         <form method="post">
                             <input type="submit" name="Habilidades" value="Habilidades">
                             <input type="submit" name="Poderes" value="Poderes">
                         </form>
                     </div>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
                 <div id="listaHP">
                     <ul>
@@ -284,11 +264,12 @@
                     </ul>
                 </div>
             </section>
-
+            
             <section id="pericias">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Perícias</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
                 <div id="lista-pericias">
                     <form method="post">
@@ -296,7 +277,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Acrobacias 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Acrobacias</p>
@@ -305,7 +286,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Adestramento 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw"><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Adestramento</p>
@@ -314,7 +295,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Artes 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Artes</p>
@@ -323,7 +304,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Atletismo 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Atletismo</p>
@@ -332,7 +313,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Atualidades 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Atualidades</p>
@@ -341,7 +322,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Ciência 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Ciência</p>
@@ -350,7 +331,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Crime 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Crime</p>
@@ -359,7 +340,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Diplomacia 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Diplomacia</p>
@@ -368,7 +349,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Enganação 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Enganação</p>
@@ -377,7 +358,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Fortitude 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Fortitude</p>
@@ -386,7 +367,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Furtividade 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Furtividade</p>
@@ -395,7 +376,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Iniciativa 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Iniciativa</p>
@@ -404,7 +385,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Intimidação 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Intimidação</p>
@@ -413,7 +394,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Intuição 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Intuição</p>
@@ -422,7 +403,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Investigação 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Investigação</p>
@@ -431,7 +412,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Luta 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Luta</p>
@@ -440,7 +421,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Medicina 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Medicina</p>
@@ -449,7 +430,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Ocultismo 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Ocultismo</p>
@@ -458,7 +439,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Percepção 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Percepção</p>
@@ -467,7 +448,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Pilotagem 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Pilotagem</p>
@@ -476,7 +457,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Pontaria 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Pontaria</p>
@@ -485,7 +466,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Profissão 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Profissão</p>
@@ -494,7 +475,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Reflexos 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Reflexos</p>
@@ -503,7 +484,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Religião 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Religião</p>
@@ -512,7 +493,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Sobrevivência 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Sobrevivência</p>
@@ -521,7 +502,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Tática 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Tática</p>
@@ -530,7 +511,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Tecnologia 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Tecnologia</p>
@@ -539,7 +520,7 @@
                             <li class="Pericia-item ">
                                 <button type="submit" name="pericia" value="Vontade 2 5">
                                     <div>
-                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                        <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                         <h1>+00</h1>
                                     </div>
                                     <p>Vontade</p>
@@ -552,8 +533,9 @@
 
             <section id="atributos">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Atributos</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
                 <div id="Atributo">
                     <form>
@@ -569,8 +551,9 @@
 
             <section id="dados">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Dados</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
                 <div id="Custom-Dados">
                     <form method="post">
@@ -578,28 +561,28 @@
                             <li>
                                 <button type="submit" name="CD" value="2 8">
                                     <p class="CD-quantidade">2</p>
-                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                     <h1 class="CD-valor">8</h1>
                                 </button>
                             </li>
                             <li>
                                 <button type="submit" name="CD" value="2 8">
                                     <p class="CD-quantidade">1</p>
-                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                     <h1 class="CD-valor">20</h1>
                                 </button>
                             </li>
                             <li>
                                 <button type="submit" name="CD" value="2 8">
                                     <p class="CD-quantidade">7</p>
-                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                     <h1 class="CD-valor">12</h1>
                                 </button>
                             </li>
                             <li>
                                 <button type="submit" name="CD" value="2 8">
                                     <p class="CD-quantidade">1</p>
-                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="#D20"></use></svg>
+                                    <svg width="3.6vw" height="3.6vw" class=""><use xlink:href="../../../Global/Svg/D20.svg#D20"></use></svg>
                                     <h1 class="CD-valor">100</h1>
                                 </button>
                             </li>
@@ -610,8 +593,9 @@
             
             <section id="inventario">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Inventário</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
                 <div id="inv">
                     <div>
@@ -622,25 +606,61 @@
                         <p>Categoria:</p>
                         <p>00/00</p>
                     </div>
-                        <ul>
+                        <ul id="ul-inv">
                             <li class="item-lista-inventario">
-                                <button class="btn-expandir-inv">+</button>
-                                <img>
-                                <h1>inconstitucional inconstitucional</h1>
-                                <div>
-                                    <p>Categoria:</p>
-                                    <p>1</p>
+                                <button class="btn-expandir-inv"><svg><use xlink:href="../../../Global/Svg/down-arrow.svg#down-arrow"></use></svg></button>
+                                <div class="box-img-inv">
+                                    <img src="" class="Img-Inv">
                                 </div>
-                                <div>
-                                    <p>Peso:</p>
-                                    <p>1</p>
-                                </div>
-                                <div>
-                                    <p>Quantidade:</p>
-                                    <p>3</p>
+                                <h1 class="nome-item">inconstitucional inconstitucional</h1>
+                                <div class="div-basic-info-inv">
+                                    <div class="div-info-inv">
+                                        <p>Categoria:</p>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="div-info-inv">
+                                        <p>Peso:</p>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="div-info-inv">
+                                        <p>Quantidade:</p>
+                                        <span>3</span>
+                                    </div>
                                 </div>
                                 <form method="post">
-                                    <button type="submit" name="IEQ" value="0 DTG45DGS3" class="item-Equipado">@</button>
+                                    <button type="submit" name="IEQ" value="0 DTG45DGS3" class="item-Equipado"></button>
+                                    <div class="inv-linha"></div>
+                                    <div class="oculto info-oculta">
+                                        <p class="Tag-item">lixo</p>
+                                        <p class="Descricao-item">Esse é um item lixo</p>
+                                        <button type="submit" name="IRE" value="Remover DTG45DGS3">Remover</button>
+                                        <button type="submit" name="IED" value="Editar DTG45DGS3">Editar</button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="item-lista-inventario">
+                                <button class="btn-expandir-inv"><svg><use xlink:href="../../../Global/Svg/down-arrow.svg#down-arrow"></use></svg></button>
+                                <div class="box-img-inv">
+                                    <img src="" class="Img-Inv">
+                                </div>
+                                <h1 class="nome-item">inconstitucional inconstitucional</h1>
+                                <div class="div-basic-info-inv">
+                                    <div class="div-info-inv">
+                                        <p>Categoria:</p>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="div-info-inv">
+                                        <p>Peso:</p>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="div-info-inv">
+                                        <p>Quantidade:</p>
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <form method="post">
+                                    <button type="submit" name="IEQ" value="0 DTG45DGS3" class="item-Equipado"></button>
+                                    <div class="inv-linha"></div>
                                     <div class="oculto info-oculta">
                                         <p class="Tag-item">lixo</p>
                                         <p class="Descricao-item">Esse é um item lixo</p>
@@ -655,29 +675,33 @@
 
             <section id="proficiencias">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Proficiências</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
             </section>
 
             <section id="armas">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Armas</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
             </section>
 
             <section id="rituais">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Rituais</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
             </section>
 
             <section id="sobre">
                 <div class="Titulo">
+                    <p></p>
                     <h1>Sobre</h1>
-                    <a>Editar</a>
+                    <a><svg class="pencil-editar"><use xlink:href="../../../Global/Svg/pencil.svg#pencil"></use></svg></a>
                 </div>
             </section>
 
